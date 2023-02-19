@@ -36,7 +36,11 @@ app.post('/',(req, res)=>{
             res.send('error');
         }else{
             console.log("email sent " + info.response )
-            res.send('Success');
+            let obj ={
+                status : "200-ok",
+
+            }
+            res.send(obj);
         }
 
     })
