@@ -3,6 +3,12 @@ const express = require('express');
 const nodemailer = require("nodemailer");
 const app = express();
 const PORT = process.env.PORT || 5000 ;
+// v2
+const cors = require("cors");
+app.use(cors({
+    origin: '*'
+}));
+// 
 app.use(express.json());
 app.get('/',(req,res)=>{
     res.send("Hello  !!!");
