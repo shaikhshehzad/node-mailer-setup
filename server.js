@@ -22,10 +22,10 @@ app.post('/',(req, res)=>{
             pass: "rtmtzokfnowkifmn"
         }
     })
-
+// trailsatshehzad@gmail.com
     const mailOptions = {
         from : req.body.email,
-        to : "trailsatshehzad@gmail.com",
+        to : "shehzadali3113@gmail.com",
         subject : `message from ${req.body.Name}`,
         text : req.body.Description + `Customer email is  ${req.body.Email} `
     }
